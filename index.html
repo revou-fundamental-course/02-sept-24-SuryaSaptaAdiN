@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="kalkulator-container">
+
+        <div class="layar">
+            <img id="gambarSegitiga" alt="Gambar Segitiga" style="display:none;">
+            <div id="hasil" style="display:none;"></div>
+        </div>
+
+        <form id="kalkulatorForm" onsubmit="hitung(event)">
+            <label for="jenisSegitiga">Pilih Jenis Segitiga:</label>
+            <select id="jenisSegitiga" onchange="tampilkanForm()">
+                <option value="">--Pilih Segitiga--</option>
+                <option value="samasisi">Segitiga Sama Sisi</option>
+                <option value="samakaki">Segitiga Sama Kaki</option>
+                <option value="semb">Segitiga Sembarang</option>
+                <option value="sikusiku">Segitiga Siku-Siku</option>
+            </select>
+
+            <div id="inputField"></div>
+
+            <button type="submit">Hitung</button>
+        </form>
+
+        <p id="caraPengerjaan"></p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
